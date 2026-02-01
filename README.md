@@ -1,5 +1,7 @@
 # 🌊 Maják - Tvůj bezpečný přístav
 
+> **Vyzkoušejte si aplikaci naživo zde: [mates.sharkus.cz/maják](http://mates.sharkus.cz/maják)**
+
 Maják je webový deník s integrovanou umělou inteligencí, který pomáhá lidem vypsat se ze svých pocitů a získat okamžitou empatickou podporu.
 
 ## ✨ Funkce
