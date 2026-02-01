@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = 'AIzaSyBJ7oiPWwhXZQH4photwoLW7kEdlxZYPXM';
+const GEMINI_API_KEY = 'ZDE_VLOZ_SVUJ_KLIC';
 const chatWindow = document.getElementById('chat-window');
 const chatInput = document.getElementById('chat-input');
 const sendBtn = document.getElementById('send-btn');
@@ -165,3 +165,4 @@ _supabase.auth.onAuthStateChange((event, session) => {
         loadSessions();
     }
 });
+
