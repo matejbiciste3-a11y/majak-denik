@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Chat s Majákem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabaseClient.js"></script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Maják</h2>
+            </div>
+            <button id="new-chat-btn" class="btn-primary">
+                <span>+</span> Nový chat
+            </button>
+            <div id="session-list" class="session-list">
+            </div>
+        </aside>
+
+        <div class="container chat-container">
+            <nav>
+                <button id="toggle-sidebar" class="btn-icon">☰</button>
+                <span class="chat-title" id="current-chat-title">Nová konverzace</span>
+                <div style="margin-left: auto; display: flex; gap: 15px;">
+                    <a href="index.html" class="nav-link">Domů</a>
+                    <a href="journal.html" class="nav-link">Deník</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+            </nav>
+
+            <div id="chat-window" class="chat-window">
+                <div class="message ai-message">
+                    Ahoj! Jsem tvůj Maják. Jsem tu, abych ti naslouchal. O čem dnes přemýšlíš?
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Napiš zprávu..." autocomplete="off">
+                    <button id="send-btn">Odeslat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>

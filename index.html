@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maják | Tvůj průvodce světlem</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabaseClient.js"></script>
+</head>
+
+<body>
+    <div class="container hero-container">
+        <nav id="main-nav">
+            <!-- Dynamicky plněno z JS -->
+        </nav>
+
+        <header class="hero">
+            <h1>Najdi svůj vnitřní klid</h1>
+            <p>Maják je tvůj bezpečný přístav pro každodenní myšlenky a emoce. Sdílej svůj příběh, získej podporu a
+                sleduj novinky ze světa.</p>
+            <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center;">
+                <a href="journal.html" class="btn" style="text-decoration: none; display: inline-block;">Začít psát</a>
+                <a href="#news" class="btn-small" style="text-decoration: none; display: inline-block;">Novinky ze
+                    světa</a>
+            </div>
+        </header>
+
+        <section id="news" class="news-section">
+            <h2 style="text-align: center; margin-bottom: 30px;">Novinky ze světa</h2>
+            <div id="news-feed" class="news-grid">
+                <div class="loading">Sledujeme obzor pro nejnovější zprávy...</div>
+            </div>
+        </section>
+
+        <section id="donate" class="donation-section">
+            <div class="donation-card">
+                <h2 style="margin-bottom: 10px;">Podpoř rozvoj Majáku 🌊</h2>
+                <p style="font-size: 0.95rem; margin-bottom: 20px;">Tvůj dar nám pomůže platit hosting a chytrou AI.
+                    Každý příspěvek udržuje Maják svítit.</p>
+
+                <div class="amount-selector">
+                    <button class="amount-btn" data-amount="100">100 Kč</button>
+                    <button class="amount-btn active" data-amount="200">200 Kč</button>
+                    <button class="amount-btn" data-amount="500">500 Kč</button>
+                </div>
+
+                <input type="number" id="custom-amount" class="custom-amount" placeholder="Jiná částka (Kč)">
+
+                <button id="donate-btn" class="btn pulse-btn" style="margin-top: 25px; width: 100%;">
+                    Ukázat QR kód pro platbu 📱
+                </button>
+
+                <div id="qr-result" style="display: none;">
+                    <div class="qr-wrapper">
+                        <!-- QR kód se načte sem -->
+                        <img id="qr-image" src="" alt="QR Platba" style="max-width: 200px; width: 100%;">
+                    </div>
+                    <div class="account-info">
+                        <p>Číslo účtu: <strong>2547178047 / 3030</strong></p>
+                        <p>Banka: <strong>Air Bank</strong></p>
+                        <p style="margin-top: 10px; opacity: 0.8; font-style: italic;">Po naskenování v appce se ti
+                            všechno (částka i účet) vyplní samo. Děkujeme! ✨</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.7;">100 % částky jde na provoz webu a AI,
+                    žádné poplatky prostředníkům.</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
