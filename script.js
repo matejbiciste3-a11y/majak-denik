@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = 'AIzaSyBJ7oiPWwhXZQH4photwoLW7kEdlxZYPXM';
+const GEMINI_API_KEY = 'ZDE_VLOZ_SVUJ_KLIC';
 const SESSION_TIMEOUT = 20 * 60 * 60 * 1000; // 20 hodin v ms
 
 function checkSessionExpiry() {
@@ -313,4 +313,5 @@ async function loadPublicPosts() {
             </div>
         `;
     });
+
 }
